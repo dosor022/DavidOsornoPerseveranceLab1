@@ -3,6 +3,8 @@
  */
 package edu.fiu.roverVision;
 
+import java.io.IOException;
+
 import edu.fiu.sysdesign.SelfCheckCapable;
 import edu.fiu.sysdesign.SelfCheckUtils;
 
@@ -14,6 +16,18 @@ public class Robot implements SelfCheckCapable {
 	private String name;
 	private int position;
 	private int isOn;
+	
+	
+	Motor myMotor;
+	Wheel myWheel;
+	Computer myComputer;
+	Transceiver myTransceiver;
+	
+	public Robot() {
+		
+		myComputer = new Computer();
+		
+	}
 
 
 	@Override
@@ -36,8 +50,17 @@ public class Robot implements SelfCheckCapable {
 	
 	/**
 	 * Power On Robot
+	 * @throws IOException 
 	 */
-	public void powerOn() {
+	public void powerOn() throws IOException {
+		
+		//Check System is good-to-go!
+		System.out.println("Vision is Alive");
+		runSelfCheck();
+		
+		//Start operation from the user's remote control
+		Transceiver myTransceiver = new Transceiver();
+		myTransceiver.startOperation();
 	}
 	
 	/**

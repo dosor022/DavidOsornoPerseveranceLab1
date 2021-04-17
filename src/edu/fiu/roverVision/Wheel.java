@@ -24,6 +24,13 @@ public class Wheel {
 	 */
 	public void wheelForward() {
 		
+		// Show Action Taken
+		System.out.println("\n");
+		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+		System.out.println("********* [ MOVE FORWARD ] ***********");
+		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
+		System.out.println("\n");
+		
 	}
 	
 	/**

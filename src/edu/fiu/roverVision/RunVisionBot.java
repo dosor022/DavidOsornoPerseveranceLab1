@@ -3,6 +3,8 @@
  */
 package edu.fiu.roverVision;
 
+import java.io.*;
+
 
 
 /**
@@ -10,22 +12,22 @@ package edu.fiu.roverVision;
  *
  */
 public class RunVisionBot {
-
 	
 	
 
 	/**
 	 * @param args
+	 * @throws IOException 
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		Robot myVisionBot = new Robot();
-		myVisionBot.runSelfCheck();
+		myVisionBot.powerOn();
 		
-		System.out.println("Vision is Alive");
+		
 
 	}
 
-
+	
 
 }

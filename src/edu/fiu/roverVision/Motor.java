@@ -9,13 +9,22 @@ package edu.fiu.roverVision;
  */
 public class Motor {
 	
+	Wheel myWheel;
+	
 	private int speed;
 	private double velocity;
+	
+	public Motor() {
+		myWheel = new Wheel();
+	}
 	
 	/**
 	 * Move Forward
 	 */
 	public void moveForward() {
+		
+		//Move Wheel Forward
+		myWheel.wheelForward();
 		
 	}
 	

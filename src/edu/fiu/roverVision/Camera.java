@@ -7,7 +7,7 @@ package edu.fiu.roverVision;
  * @author ozzo
  *
  */
-public abstract class Camera extends Sensor {
+public class Camera extends Sensor {
 
 	/**
 	 * 
@@ -26,7 +26,13 @@ public abstract class Camera extends Sensor {
 	 * Take picture
 	 */
 	public void takePicture() {
-		
+		System.out.println("\n");
+		System.out.println(":):):):):):):):):):):):):):):):):)");
+		System.out.println(".... Smile for the Camera!........");
+		System.out.println("----------------------------------");
+		System.out.println("********[ PICTURE TAKEN ]*********");
+		System.out.println("(:(:(:(:(:(:(:(:(:(:(:(:(:(:(:(:(:");
+		System.out.println("\n");
 	}
 	
 	/**
@@ -35,5 +41,13 @@ public abstract class Camera extends Sensor {
 	public void cleanUp() {
 		
 	}
+
+	@Override
+	public String getComponentName() {
+		// TODO Auto-generated method stub
+		return "Canon Camera";
+	}
+
+	
 
 }

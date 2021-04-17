@@ -1,7 +1,7 @@
 /**
  * 
  */
-package edu.fiu.roverVision;
+package edu.fiu.toweldispenser;
 
 import edu.fiu.sysdesign.SelfCheckCapable;
 
@@ -10,10 +10,9 @@ import edu.fiu.sysdesign.SelfCheckCapable;
  *
  */
 public abstract class Sensor implements SelfCheckCapable {
+
 	
-	private int voltage;
-	private double units;
-	
+
 	@Override
 	public boolean selfCheck() {
 		// TODO Auto-generated method stub
@@ -24,27 +23,6 @@ public abstract class Sensor implements SelfCheckCapable {
 	public boolean runSelfCheck() {
 		// TODO Auto-generated method stub
 		return true;
-	}
-	
-	/**
-	 * Get Sensor Reading
-	 */
-	public void getReading() {
-		
-	}
-	
-	/**
-	 * Calibrate
-	 */
-	public void calibrate() {
-		
-	}
-	
-	/**
-	 * Stop wheel
-	 */
-	public void wheelStop() {
-		
 	}
 
 }
